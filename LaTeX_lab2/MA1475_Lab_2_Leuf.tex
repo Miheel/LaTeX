@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\newcommand{\flagga}[3]{\begin{tikzpicture}
+		\fill [#1] (0,0) rectangle (5,3);
+		\fill [#2] (0,0.5) rectangle (5,2.5);
+		\fill [#3] (0,1) rectangle (5,2);
+	\end{tikzpicture}}
+\begin{document}
+	
+\section{Uppg1}
+	$$\psi(x)\log x + \sum_{n\leq x}\land(n)\psi \left(\frac{x}{n}\right)= 2x \log x +O(x)$$
+
+\section{Uppg2}
+	Typsätta referenslista
+
+\section{Uppg3}
+	Chirikov and Vivaldi \cite{chirikovvivaldi}
+
+\section{Uppg4}
+	\flagga{blue}{white}{red}
+	\flagga{darkgray}{gray}{lightgray}
+	\flagga{violet}{green}{orange}
+
+
+\begin{thebibliography}{chiviv99}
+	\bibitem[chiviv99]{chirikovvivaldi}
+		B. V. Chirikov and F. Vivaldi,
+		``An algorithmic view of pseudochaos", \emph{J. Physica D},
+		vol.~129, no.~3-4, pp.~223--235, 1999.
+	\bibitem[guy04]{guy}
+		Richard K. Guy, \emph{Unsolved Problems in Number Theory},
+		third edition, Springer, New York, 2004.
+\end{thebibliography}
+\end{document}
